@@ -11,14 +11,6 @@
 
     <artifactId>example</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.alahr.storm</groupId>
-            <artifactId>alahr-storm</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -53,7 +45,7 @@
                                 </transformer>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.alahr.stom.example.wordcount.topology.WordCountTopology</mainClass>
+                                    <mainClass>com.alahr.storm.example.wordcount.topology.WordCountTopology</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
