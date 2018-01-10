@@ -9,10 +9,6 @@ import org.apache.storm.tuple.Values;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -40,7 +36,7 @@ public class SentenceSpout extends BaseRichSpout {
     }
 
     public void nextTuple(){
-        if(index >= 7){
+        if(index >= this.sentences.length){
             return;
         }
 

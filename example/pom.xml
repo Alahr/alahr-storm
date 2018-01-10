@@ -11,6 +11,14 @@
 
     <artifactId>example</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alahr.storm</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
